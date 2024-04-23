@@ -1,14 +1,13 @@
 # LoLytics
 # LoLytics: Generative AI Analytics for League of Legends
 
-## About LoLytics
-LoLytics is a cutting-edge analytics platform that leverages generative AI to provide deep insights into League of Legends gameplay. Designed for players, coaches, and enthusiasts, our tool crunches vast amounts of game data to offer personalized recommendations, strategic advice, and predictive outcomes that enhance the gaming experience.
+### Concept and Aspiration of LoLytics
 
-## Key Features
-- **In-Depth Match Analysis**: Break down your past games with advanced metrics and AI-driven insights.
-- **Predictive Performance Modeling**: Get forecasts on game outcomes based on current trends and player performance.
-- **Strategic Development Tools**: Utilize AI to generate strategies and counter-strategies for your next game.
-- **Player Progress Tracking**: Monitor your improvement over time with detailed progress reports.
+LoLytics is currently in its initial development phase, however it is envisioned to be a sophisticated analytics platform that is  designed to compile an extensive amount of matchID and RiotID data associate with various PUUID's. The goal of aggregating all this infomration serves as the base for advanced machine learning models that are engineered to derive meaningful outputs from that different features. These results will be infused into a Llama3, an open source Large Language Model (LLM), by a Retrieval-Augmented Generation (RAG) framework with the goal of transforming it into a virtual coach for low elo players.
+
+There are multiple pieces to this application. First I need to figure out which features I plan on building a Deep-Neural Network. Since a lot of this data will be unsupervised, I also need to figure out how to translate model results to something that makes sense. I currently am aiming to utilize high elo gameplay metrics and ideal results and comparing that to the metrics from my DNN. Once I have successfully done this I need to use these results and implement RAG functionality with LangChain and vector databases like Pinecone to perform similary searches based on user queries. 
+
+This combination will enable LoLytics to process user inquiries with unparalleled semantic precision, offering responses that resonate deeply with the player's unique experiences and challenges. In essence, it's about crafting an AI coach whose guidance is as perceptive and personalized as that of a human mentor, dedicated to elevating the player's strategic finesse in League of Legends.
 
 ## Getting Started
 To get started with LoLytics, clone the repository and follow the setup instructions below:
